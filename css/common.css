@@ -1,3 +1,7 @@
+/* Over-ride styles */
+body{
+	overflow-x: hidden;
+}
 .container-full{
 	margin:0 auto;
 	width:100%;
@@ -7,6 +11,47 @@
 	margin: 0 auto;
 	text-align: center;
 }
+
+.tooltip-inner{
+	background-color:rgba(0,0,0,0.8);
+	font-size:1.1em;
+}
+
+/* Navigation */
+#nav{
+	position: fixed;
+	top: 40%;
+	right:5px;
+}
+
+#nav li{
+	display: block;
+	margin:5px;
+	width:16px;
+	height: 16px;
+	overflow: hidden;
+	background-color: white;
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 50%;
+	-webkit-box-shadow: 0px 0px 3px 1px rgb(53, 53, 53);
+	-moz-box-shadow: 0px 0px 3px 1px rgb(53, 53, 53);
+	-ms-box-shadow: 0px 0px 3px 1px rgb(53, 53, 53);
+	box-shadow: 0px 0px 3px 1px rgb(53, 53, 53);
+	-webkit-transition: background 0.3s;
+	-moz-transition: background 0.3s;
+	-ms-transition: background 0.3s;
+	transition: background 0.3s;
+}
+
+#nav li:hover{
+	background-color:
+}
+
+#nav a{
+	text-indent: -999em;
+	color: white;
+}
+
 /* Main-Wrapper */
 
 #main-wrapper{
@@ -22,7 +67,6 @@
 }
 
 #name{
-	width: 100%;
 	margin: 1em;
 	font-size: 9em;
 }
@@ -41,10 +85,6 @@
 	font-size: 3em;
 	margin:1.5em auto;
 	padding-top: 2px;
-}
-
-#portfolio-wrapper{
-
 }
 
 .portfolio-item{
@@ -152,8 +192,12 @@
 /* Styles for Mobile */
 
 @media (max-width: 768px) {
+	#nav{
+		display: none;
+	}
 	#name{
 		margin:0;
+		width: 100%;
 	}
 	#typo{
 		margin-top: 5em;
