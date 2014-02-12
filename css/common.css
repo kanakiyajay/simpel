@@ -49,7 +49,7 @@ body{
 
 #nav a{
 	text-indent: -999em;
-	color: white;
+	color: transparent;
 }
 
 /* Main-Wrapper */
